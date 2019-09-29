@@ -15,7 +15,14 @@
           <p class="title-description">{{ titleDescription }}</p>
         </header>
       </div>
-      <div class="header_wrap outer">
+      <div class="content-wrap outer">
+        <section class="content inner">
+          <ul>
+            <li v-for="items in content">
+              <a :href="items.link" target="_blank">{{ items.title }}</a>
+            </li>
+          </ul>
+        </section>
       </div>
       <div class="header_wrap outer">
       </div>
