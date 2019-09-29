@@ -70,3 +70,21 @@ a {
 .content {
   padding-top: 40px;
 }
+
+/* footer */
+.footer_wrap {
+  background: #212121;
+}
+
+footer p {
+  color: #f2f2f2;
+}
+
+.copyright {
+  margin: 10px 0 15px 0;
+}
+
+footer a {
+  color: #F2F2F2;
+  text-decoration: underline;
+}
