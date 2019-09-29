@@ -3,8 +3,37 @@
   <head>
     <meta charset="utf-8">
     <title>M2us test page</title>
+    <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <h1>Hello world</h1>
+    <script src="https://unpkg.com/vue"></script>
+
+    <div id="main">
+      <div class="header_wrap outer">
+        <header class="inner">
+          <p class="title-name">{{ title }}</p>
+          <p class="title-description">{{ titleDescription }}</p>
+        </header>
+      </div>
+      <div class="content-wrap outer">
+        <section class="content inner">
+          <ul>
+            <li v-for="items in content">
+              <a :href="items.link" target="_blank">{{ items.title }}</a>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <div class="footer_wrap outer">
+        <footer class="inner">
+          <p class="copyright">
+            <span>{{ maintained.title[0] }}</span>
+            <a :href="maintained.link">{{ maintained.title[1] }}</a>
+          </p>
+        </footer>
+      </div>
+    </div>  
+
+    <script src="js/main.js"></script>
   </body>
 </html>
