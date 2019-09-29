@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>M2us test page</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="font-awesome/css/all.min.css">
   </head>
   <body>
     <script src="https://unpkg.com/vue"></script>
@@ -11,6 +12,9 @@
     <div id="main">
       <div class="header_wrap outer">
         <header class="inner">
+          <a class="vk-banner" :href="vkLink" target="_blank">
+            <i class="fab fa-vk fa-2x"></i>
+          </a>
           <p class="title-name">{{ title }}</p>
           <p class="title-description">{{ titleDescription }}</p>
         </header>

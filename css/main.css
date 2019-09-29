@@ -44,6 +44,17 @@ a {
   padding: 50px 10px 30px 10px;
 }
 
+.vk-banner {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  padding: 10px 15px;
+  color: #fff;
+  background: #0090ff no-repeat;
+  font-weight: 700;
+}
+
 .title-name {
   margin: 0;
   color: #fff;
